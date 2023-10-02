@@ -18,6 +18,7 @@ header {
     margin-top: 40px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 
     &-menu {
         width: 203px;
@@ -30,17 +31,74 @@ header {
         display: grid;
         grid-template-columns: 535px 487px;
         grid-auto-rows: 91px;
-        margin-right: 150px;
+        margin-right: 182px;
 
         &__item {
             width: 487px;
             margin-bottom: 30px;
             background-color: $gray_main;
-            margin-left: 62px;
+            margin-left: 54px;
 
             &:last-child {
                 width: 1022px;
                 height: 168px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    &-comments {
+        position: absolute;
+        top: 44.72%;
+        left: 20%;
+
+        &__line {
+            width: 1022px;
+            height: 3px;
+            background-color: $gray_main;
+        }
+        &-header {
+            display: flex;
+            justify-content: flex-start;
+            &__name {
+                font-family: 'Inter', sans-serif;
+                font-family: Inter;
+                font-size: 20px;
+                font-weight: 500;
+                line-height: 24px;
+                letter-spacing: 0em;
+                text-align: left;
+            }
+            &__dropdown {
+                width: 192px;
+                height: 19px;
+                top: 751px;
+                left: 534px;
+                display: flex;
+                &>select {
+                    font-family: Inter;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 19px;
+                    letter-spacing: 0em;
+                    text-align: left;
+                    border: 0;
+                    outline: 0;
+                    -moz-appearance: none;
+                    -webkit-appearance: none;
+                }
+            }
+            &__btn {
+                border: 0;
+                outline: 0;
+                background-color: transparent;
+                cursor: pointer;
+                font-family: Inter;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 19px;
+                letter-spacing: 0em;
+                text-align: left;
             }
         }
     }

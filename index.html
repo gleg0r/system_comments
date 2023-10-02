@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
     <title>Кинопоиск</title>
 </head>
+
 <body>
     <header></header>
     <main>
@@ -23,8 +28,23 @@
                 <div class="block-squares__item"></div>
                 <div class="block-squares__item"></div>
             </div>
-            <div class="block-commnets"> </div>
+            <div class="block-comments">
+                <div class="block-comments__line"></div>
+                <div class="block-comments-header">
+                    <p class="block-comments-header__name">Комментарии <span class="block-comments-header__count"></span></p>
+                    <label class="block-comments-header__dropdown" for="comments-filter">
+                        <select name="comments-filter" id="comments-filter">
+                            <option value="count-marks">По количеству оценок</option>
+                            <option value="date">По дате добавления</option>
+                            <option value="count-answers">По количеству ответов</option>
+                        </select>
+                        <img src="./src/img/Arrow.svg" alt="">
+                    </label>
+                    <button class="block-comments-header__btn">Избранное<img src="./src/img/heart.svg"></button>
+                </div>
+            </div>
         </div>
     </main>
 </body>
+
 </html>
