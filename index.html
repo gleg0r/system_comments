@@ -31,16 +31,28 @@
             <div class="block-comments">
                 <div class="block-comments__line"></div>
                 <div class="block-comments-header">
-                    <p class="block-comments-header__name">Комментарии <span class="block-comments-header__count"></span></p>
+                    <h3 class="block-comments-header__name">Комментарии <span class="block-comments-header__count"></span></h3>
                     <label class="block-comments-header__dropdown" for="comments-filter">
                         <select name="comments-filter" id="comments-filter">
                             <option value="count-marks">По количеству оценок</option>
                             <option value="date">По дате добавления</option>
                             <option value="count-answers">По количеству ответов</option>
                         </select>
-                        <img src="./src/img/Arrow.svg" alt="">
+                        <img class="block-comments-header__img" src="./src/img/Arrow.svg" alt="стрелка">
                     </label>
-                    <button class="block-comments-header__btn">Избранное<img src="./src/img/heart.svg"></button>
+                    <button class="block-comments-header__btn">Избранное<img class="block-comments-header__btnImg" src="./src/img/heart.svg" alt="сердце"></button>
+                </div>
+                <div class="block-comments-form">
+                    <img src="./src/img/max.png" alt="Фотография пользователя">
+                    <div class="block-comments-form__text">
+                        <p class="block-comments-form__personName">Максим Авдеенко</p>
+                        <p class="block-comments-form__count">Макс. 1000 символов</p>
+                    </div>
+                    <div class="block-comments-form__commentWrite">
+                        <input class="block-comments-form__input" placeholder="Введите текст сообщения..." type="text">
+                        <button class="block-comments-form__btn">Отправить</button>
+                    </div>
+
                 </div>
             </div>
         </div>
