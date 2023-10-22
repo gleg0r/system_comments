@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/gleg0r/system_comments.git"
@@ -15,7 +14,6 @@
     "url": "https://github.com/gleg0r/system_comments/issues"
   },
   "homepage": "https://github.com/gleg0r/system_comments#readme",
-  "dependencies": {},
   "devDependencies": {
     "scss": "^0.2.4",
     "typescript": "^5.2.2"
