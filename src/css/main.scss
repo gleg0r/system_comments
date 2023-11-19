@@ -135,7 +135,7 @@ header {
                 align-self: center;
                 width: 788px;
                 margin-right: 127px;
-                margin-top: 29px;
+                margin-top: 19px;
             }
             &__count {
                 font-family: Inter;
@@ -151,6 +151,7 @@ header {
             &__commentWrite {
                 align-self: center;
                 margin-left: 46px;
+                position: relative;
             }
             &__userName {
                 font-family: Inter;
@@ -163,11 +164,11 @@ header {
                 color: $user_color;
             }
             &__input {
-                width: 688px;
-                height: 61px;
-                margin-right: 25px;
-                margin-bottom: 7px;
-                width: 688px;
+                display: block;
+                width: 669px;
+                min-height: 43px;
+                margin-right: 22px;
+                margin-bottom: -21px;
                 border: none;   
                 box-shadow: 0px 0px 10px 0px #00000033;
                 font-family: Inter;
@@ -176,14 +177,15 @@ header {
                 line-height: 22px;
                 letter-spacing: 0.01em;
                 text-align: left;  
-                padding-left: 30px;
-
+                padding: 15px 0px 0px 20px;
+                border-radius: 5px;
+                resize: none;
+                position: absolute;
+                top: -2px;
             }
             &__btn {
                 width: 213px;
                 height: 61px;
-                top: 847px;
-                left: 1098px;
                 border-radius: 5px;
                 opacity: 0.4px;
                 margin-right: 35px;
@@ -197,6 +199,9 @@ header {
                 text-align: left;
                 color: #616161;
                 padding-left: 58px;
+                margin-left: 719px;
+                margin-top: -3px;
+                background-color: #A1A1A1;
             }
         }
     }
